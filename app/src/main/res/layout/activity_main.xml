@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leo.mqtt.MainActivity">
+
+    <Button
+        android:id="@+id/obj_button"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:text="建立MQTT对象"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:text="连接MQTT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/obj_button"/>
+
+    <Button
+        android:id="@+id/subscribe_button"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:text="开始监听"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/connect_button"/>
+
+    <Button
+        android:id="@+id/unsubscribe_button"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:text="终止监听"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subscribe_button"/>
+
+    <Button
+        android:id="@+id/disconnect_button"
+        android:layout_width="160dp"
+        android:layout_height="48dp"
+        android:text="断开MQTT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/unsubscribe_button"/>
+
+</android.support.constraint.ConstraintLayout>
